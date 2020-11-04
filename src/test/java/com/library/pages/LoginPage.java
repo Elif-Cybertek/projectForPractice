@@ -5,7 +5,7 @@ import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
-public class LoginPage extends com.library.pages.BasePage {
+public class LoginPage extends BasePage {
 
     @FindBy(id = "inputEmail")
     private WebElement emailInputBox;
