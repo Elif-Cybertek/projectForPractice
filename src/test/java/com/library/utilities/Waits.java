@@ -19,7 +19,6 @@ public class Waits {
         }
     }
     public static void clickOnElement(WebElement element){
-
         wait.until(ExpectedConditions.elementToBeClickable(element)).click();
 
     }
