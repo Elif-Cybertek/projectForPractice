@@ -23,6 +23,8 @@ public class UserGroupStepDefinitionsAA {
     public void user_selects_students_option() {
         Select select=new Select(selectUser.choseUserGroup);
         Waits.wait(3);
+
+
         select.selectByVisibleText("Students");
         Waits.wait(1);
 
@@ -42,6 +44,14 @@ public class UserGroupStepDefinitionsAA {
        Assert.assertEquals("Verification Failed!",expected,actual);
 
     }
+ // user logs in as a student
+    @Then("user should not be able to see user tab")
+    public void user_should_not_be_able_to_see_user_tab() {
+       Waits.wait(3);
+        Assert.assertTrue("Verification failed!",!selectUser.userModule.equals("Users"));
+
+    }
+
 
 
 }
