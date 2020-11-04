@@ -18,6 +18,7 @@ public class LoginStepDefinitions {
 
     @Given("user on the login page")
     public void user_on_the_login_page() {
+
         Driver.getDriver().get(ConfigurationReader.getProperty("url"));
     }
 
